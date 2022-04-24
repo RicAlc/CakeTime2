@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>CakeTime Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/caketime-logo.png" alt="logo Cake Time" class="logo-img">
+                <a href="index.html" class="logo-title-link">
+                    <h1 class="logo-title">CakeTime</h1>
+                </a>
+            </div>
+            <div class="nav-right-side">
+                <ul class="nav-routes">
+                    <li><a class="nav-routes-link" href="./productos.html">Productos</a></li>
+                    <li><a class="nav-routes-link" href="#">Contacto</a></li>
+                    <li><a class="nav-routes-link" href="#">Promociones</a></li>
+                </ul>
+                <form action="" class="search-bar">
+                    <input type="text" name="search" id="" placeholder="Buscador">
+                    <button><img src="./assets/search-icon.svg" alt="icono de buscar" class="search-icon"></button>
+                </form>
+                <a href="./pastelero.html" class="baker-link" title="Pastelero"><img src="./assets/user-icon.svg"
+                        alt="icono de usuario" class="user-icon"></a>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="address">
+        <h2>Visitanos en:</h2>
+        <div class="map-branches">
+            <div class="map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.7052021225873!2d-89.62114404186963!3d20.97617975675959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715e13144313%3A0x46a326e278ec5485!2sMONUMENTO%20ANDRES%20QUINTANA%20ROO!5e0!3m2!1sen!2smx!4v1646359123053!5m2!1sen!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <span>Calle 123 n#123 por 12A y 12B MiColonia</span>
+            </div>
+            <div class="branches">
+                <h3>Sucursales y horarios</h3>
+                <ul>
+                    <li class="branch">Centro</li>
+                    <ul>
+                        <li class="hours">Lunes a viernes de 8:00 - 22:00</li>
+                        <li class="hours"> Sábados de 8:00 - 15:00</li>
+                    </ul>
+                    <li class="branch">Galerias</li>
+                    <ul>
+                        <li class="hours">Lunes a viernes de 8:00 - 22:00</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contactanos</h2>
+        <div class="phonenumber-socials">
+            <div class="phonenumber">
+                <h3>Telefonos</h3>
+                <p>Horarios de atencion al cliente de Lunes a Viiernes de 9:00 - 19:00</p>
+                <span class="phone">+52 1234567890</span>
+                <span class="phone">+52 0987654321</span>
+            </div>
+            <div class="socials">
+                <h3>Nuestras redes</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+            <h3>Escribenos un correo</h3>
+            <form action="sendMail()" class="send-mail">
+                    <label for="nombre">Nombre:
+                        <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                    </label>
+                    <label for="email">e-mail:
+                        <input type="email" id="email" placeholder="cliente@example.com" required>
+                    </label>
+                    <label for="mensaje">Mensaje:
+                        <textarea name="mensaje" id="" cols="50" rows="6"></textarea>
+                    </label>
+                    <button class="sendmsg-button">Enviar</button>
+            </form>
+    </section>
+</main>
+<footer>
+    <div class="footer-dev">
+        <h3>Developer</h3>
+        <p>Ricardo Alcalá Castro</p>
+        <ul class="list-flex">
+            <li><a href="">Linkedin</a></li>
+            <li><a href="https://github.com/RicAlc">Github</a></li>
+            <li><a href="">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="footer-caketime">
+        <h1 class="logo-title">Cake Time</h1>
+        <ul class="list-flex">
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Contáctanos</a></li>
+        </ul>
+    </div>
+    <div class="footer-atrib">
+        <h3>Atribuciones</h3>
+        <ul>
+            <li>Fotos por <a href="https://www.pexels.com/@dima-valkov-1186343/" target="blank_">Dima Valkov</a></li>
+            <li>Imágenes de <a href="https://pixabay.com/es/users/tatiana7744-22271110/" target="blank_">Tatiana7744</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

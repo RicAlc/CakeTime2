@@ -1,0 +1,547 @@
+/* #C5E0DC  #774F38
+Descripciones, texto-----font-family: 'Anek Kannada', sans-serif;
+Especial logo------font-family: 'Pacifico', cursive;
+Titulos, navs-----font-family: 'Raleway', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada&family=Pacifico&family=Raleway:wght@800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Anek Kannada', sans-serif;
+}
+/* ----- BARA DE NAVEGACIÓN -----*/
+body{
+    background-color: #FFFBED;
+}
+main{
+    margin:0 auto;
+    padding: 5px;
+    width: 65%;
+    background-color: #FFF;
+    min-height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+section{
+    margin: 0;
+    background-color: #FFF;
+}
+.navbar{
+    width: 100%;
+    min-width: 1100px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: #C5E0DC;
+    color: #774F38;
+    height: 75px;
+}
+.logo{
+    display: flex;
+    margin-left: 4vw;
+}
+.logo-img{
+    margin: auto;
+    height: 60px;
+    width: fit-content;
+    /* margin: auto 5px auto 8vw; */
+}
+.logo-title-link{
+    text-decoration: none;
+    color: inherit;
+}
+.logo-title{
+    line-height:75px;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 0 20px;
+}
+.logo-title-link:hover{
+    color:#AA6D4A 
+}
+.banner_slogan{
+    width: 100%;
+}
+.nav-right-side{
+    display:flex ;
+}
+.nav-routes{
+    display: flex;
+}
+.nav-routes li{
+    list-style-type: none;
+}
+.nav-routes-link{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height:75px;
+    text-decoration: none;
+    color: #774F38;
+    margin: 0 6px;
+}
+.nav-routes-link:hover{
+    color:#AA6D4A;
+}
+.search-bar{
+    margin: auto 15px;
+    height: 30px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+.search-bar input{
+    background: transparent;
+    flex:1;
+    font-size: 15px;
+    border:0;
+}
+.search-bar button{
+    height: 22px;
+    cursor: pointer;
+    background: transparent;
+    flex:1;
+    border:0;
+}
+.search-icon{
+    height: 100%;
+}
+.cart-button{
+    background:transparent;
+    height: 33px;
+    margin: auto 10px;
+    border: 0;
+}
+.cart-button:hover{
+    cursor: pointer;
+}
+.cart-icon{
+    height: 100%;
+    width: 30px;
+}
+.user-icon{
+    line-height: 0;
+    height: 100%;
+    width: 30px;
+}
+.baker-link{
+    height: 45px;
+    margin: auto 30px auto 15px;
+    display: inline;
+}
+/* ----- PRDOCUTOS ----- */
+.product-banner{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+.product-banner-img{
+    width: 60vw;
+    height: fit-content;
+    min-width: 850px;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+.section-title{
+    font-family: 'Pacifico', sans-serif;
+    font-size:60px;
+    color: #774F38;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+}
+
+.product-selection{
+    
+    text-align: center;
+    height: fit-content;
+    margin: 10px auto;
+}
+.product{
+    display: inline-block;
+    background-color: #FFF;
+    margin:0 20px;
+    border: solid 1px #F2F2F2;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center; 
+    width: 300px;
+    height: 320px;
+}
+.product-price{
+    font-size: 20px;
+}
+.product:hover{
+    cursor:pointer;
+    border: #FFF solid 1px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+}
+.product-title{
+    font-size: 24px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.product-img{
+    width: 180px;
+    height: fit-content;
+}
+.add-product{
+    width: fit-content;
+    height: 40px;
+    margin:15px auto;
+    /* background-color:yellow; */
+    display: flex;
+}
+.add-buttons{
+    width: 32px;
+    height:32px;
+    margin: auto 5px;
+    border: none;
+    background-color: #FFF;
+}
+.add-buttons:hover{
+    cursor: pointer;
+}
+.add-product-icons{
+    width: 16px;
+    height: 100%;
+
+}
+.qty{
+    font-size: 28px;
+    padding: 0 10px;
+}
+/* ----- CONTACTANOS -----*/
+.contact, .address{
+    width: 70%;
+    min-width: 900px;
+    margin: 50px auto 0;
+    /* background-color: #B59B8B; */
+    text-align: center;
+}
+
+.contact h2, .address h2{
+    font-family: 'Pacifico', sans-serif;
+    display: block;
+    font-size: 40px;
+    color: #4A3F39;
+}
+.contact h3, .address h3{
+    display: block;
+    font-size: 25px;
+    color: #365A70;
+}
+.map-branches{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+.map{
+    padding: 30px;
+    margin-left: 0 10px;
+}
+.map span{
+    display: block;
+    font-size: 18px;
+}
+.map iframe{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+.branches{
+    width: 300px;
+    margin: 10px 10px;
+    padding: 30px;
+}
+.branches h3{
+    text-align: left;
+}
+.branches li{
+    list-style-type: none;
+}
+.branch{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 25px;
+}
+.hours{
+    text-indent: 5px;
+    text-align: left;
+    list-style-type: disc;
+}
+.phonenumber-socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.phone{
+    font-weight: 600;
+    padding: 5px;
+    display: block;
+}
+.socials ul{
+    display: flex;
+}
+.socials li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 10px;
+}
+.contact label, .contact input, .contact textarea{
+    resize: none;
+    display: block;
+    text-align: left;
+}
+.send-mail{
+    border: solid #2F2F2F 2px;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 20px;
+    margin: 25px auto;
+}
+.contact input {
+    padding-left: 8px;
+    height: 30px;
+    width: 75%;
+    border-radius: 5px;
+}
+.contact label{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.sendmsg-button{
+    background-color: #4D81A1;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px 25px;
+    margin: 20px auto;
+    color: #FFF;
+    font-size: 20px;
+}
+.sendmsg-button:hover{
+    cursor: pointer;
+    background-color:#3E6882;
+}
+.sendmsg-button:active{
+    background-color: #365A70;
+}
+
+/* ----- FOOTER ------*/
+footer{
+    width: 100%;
+    background-color: #4A3F39;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.list-flex{
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+footer li{
+    list-style-type: none;
+    margin: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: #B59B8B ;
+}
+footer a:hover{
+    color: #D18B62;
+}
+.footer-dev{
+    padding: 10px;
+    margin: 10px 0 0 20px;
+}
+.footer-atrib{
+    padding: 10px;
+    margin: 10px 20px 0 0;
+}
+/* ----- MODAL BUY -----  */
+.bg-modal, .custom-cake{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.7);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;  
+    left: 0; 
+    right: 0;
+    bottom: 0;
+}
+.modal-content, .custom-cake-modal{
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF;
+    height: 600px;
+    width: 380px;
+    border-radius: 5px;
+}
+.close-button{
+    background-color: #FFF;
+    border: 0;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    top:10px;
+    right: 15px;
+}
+.close-button:hover{
+    cursor: pointer;
+}
+.close-icon{
+    height: 100%;
+}
+.modal-product-title{
+    font-size: 24px;
+    margin-top: 30px;
+}
+.modal-product-img{
+    margin:15px;
+    width: 60%;
+    height: auto;
+    max-width: 270px;
+}
+.modal-product-price{
+    font-size: 30px;
+    font-weight: 700; 
+    color: #3E6882;
+}
+.product-description{
+    line-height: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 15px auto 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-qty{
+    width: fit-content;
+    margin: 10px auto 25px;
+    display: flex;
+}
+.product-total, .adding{
+    margin:0 15px;
+}
+.add-tocart-button{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4D81A1;
+    border: 0;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 0 auto;
+    color: #FFF;
+    width: 80%;
+    font-size: 20px;
+}
+.add-tocart-button:hover{
+    cursor: pointer;
+    background-color:#3E6882;
+}
+.add-tocart-button:active{
+    background-color: #365A70;
+}
+/* ----- PASTEL PERSONALIZADO -----*/
+.custom-cake-modal h3{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.choose-cake-flavor{
+    display: inline-flex;
+    margin: 10px auto 0;
+}
+.choose-cake-flavor h4{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.choose-toppings{
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin: 20px auto 25px;
+}
+.choose-toppings h4{
+    font-size: 20px;
+}
+.custom-cake-img{
+    width: 70%;
+}
+.topping-list{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 15px auto;
+}
+.articles{
+    text-align: left    ;
+    border:0;
+    width: 100%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+.articles tr{
+    border-bottom: 1px solid #b0b0b0;
+}
+.articles-articulo{
+    width: 65%;
+}
+.cart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    height: fit-content;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    border: 1px solid  #EFEFEF;
+    border-radius: 2px;
+    padding: 3rem;
+    margin:75px auto;
+}
+.cart h3{
+    font-size: 25px;
+    color: #2F2F2F;
+}
+.cart hr{
+    border: #2F2F2F solid 1px;
+}
+.articles thead{
+    background-color: #2F2F2F;
+}
+.articles th{
+    text-align: center;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.customer-info label, .customer-info input{
+    display: block;
+}
+.customer-info label{
+    margin-left: 25px;
+    font-weight: 600;
+    color: #4A3F39;
+    text-align: left;
+}
+.customer-info input{
+    margin: 0 auto;
+    width: 85%;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>CakeTime | Prodcutos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/caketime-logo.png" alt="logo Cake Time" class="logo-img">
+                <a href="index.html" class="logo-title-link">
+                    <h1 class="logo-title">CakeTime</h1>
+                </a>
+            </div>
+            <div class="nav-right-side">
+                <ul class="nav-routes">
+                    <li><a class="nav-routes-link" href="#">Productos</a></li>
+                    <li><a class="nav-routes-link" href="./contactanos.html">Contacto</a></li>
+                    <li><a class="nav-routes-link" href="#">Promociones</a></li>
+                </ul>
+                <form action="" class="search-bar">
+                    <input type="text" name="search" id="" placeholder="Buscador">
+                    <button><img src="./assets/search-icon.svg" alt="icono de buscar" class="search-icon"></button>
+                </form>
+                <button onclick="showCart()" class="cart-button" title="Carrito">
+                    <img src="./assets/cart-icon.svg" alt="icono bolsa de compras" class="cart-icon">
+                </button>
+                <a href="./pastelero.html" class="baker-link" title="Pastelero"><img src="./assets/user-icon.svg"
+                        alt="icono de usuario" class="user-icon"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <button id="close_product_modal" class="close-button"><img src="./assets/close-icon.svg" alt="icono cerrar"
+                    class="close-icon"></button>
+            <h3 class="modal-product-title">Galleta de chispas de chocolate</h3>
+            <img src="./assets/cookie.png" alt="producto" class="modal-product-img">
+            <P class="modal-product-price">$50.00</P>
+            <p class="product-description">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam
+                iure inventore perferendis, magni eveniet.</p>
+            <div class="product-qty">
+                <button class="add-buttons"><img src="./assets/remove-icon.svg" alt="icono menos"
+                        class="add-product-icons"></button>
+                <p class="qty">0</p>
+                <button class="add-buttons"><img src="./assets/add-icon.svg" alt="icono más"
+                        class="add-product-icons"></button>
+            </div>
+            <button class="add-tocart-button">
+                <span class="adding">Añadir al carrito</span>
+                <span class="product-total">$150</span>
+            </button>
+        </div>
+    </div>
+    <div class="custom-cake">
+        <div class="custom-cake-modal">
+            <button id="close_custom_cake" onclick="closeCustomCake()" class="close-button"><img
+                    src="./assets/close-icon.svg" alt="icono cerrar" class="close-icon"></button>
+            <h3>Pastel personalizado</h3>
+            <img src="./assets/custom-cake.png" alt="pastel de red velvet" class="custom-cake-img">
+            <div class="choose-cake-flavor">
+                <h4>Sabor</h4>
+                <select name="cake" id="cake_falv" class="cake-flavor">
+                    <option value="selected" selected="selected" 2>Elige</option>
+                    <option value="Fresa">Mocha</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Redvelvet">Red velvet</option>
+                    <option value="Choco-fresa">Choco-fresa</option>
+                    <option value="tresleches">Tres leches</option>
+                </select>
+            </div>
+            <div class="choose-toppings">
+                <h4>Toppings</h4>
+                <p>Elige hasta 3 toppings</p>
+                <div class="topping-list">
+                    <label for="chk_fondant">
+                        <input type="checkbox" name="topping1" id="chk_fondant"> Fondant
+                    </label>
+                    <label for="chk_chocolate">
+                        <input type="checkbox" name="topping2" id="chk_chocolate"> Chocolates
+                    </label>
+                    <label for="chk_fruta">
+                        <input type="checkbox" name="topping3" id="chk_fruta"> Frutas
+                    </label>
+                    <label for="chk_coco">
+                        <input type="checkbox" name="topping4" id="chk_coco"> Coco rallado
+                    </label>
+                    <label for="chk_nuez">
+                        <input type="checkbox" name="topping5" id="chk_nuez"> Nueces
+                    </label>
+                    <label for="chk_sprinkle">
+                        <input type="checkbox" name="topping6" id="chk_sprinkle"> Sprinkles
+                    </label>
+                    <label for="chk_mermelada">
+                        <input type="checkbox" name="topping7" id="chk_mermelada"> Mermelada
+                    </label>
+                    <label for="chk_galleta">
+                        <input type="checkbox" name="topping8" id="chk_galleta"> Galletas
+                    </label>
+                    <label for="chk_cereza">
+                        <input type="checkbox" name="topping9" id="chk_cereza"> Cerezas
+                    </label>
+                    <label for="chk_frost">
+                        <input type="checkbox" name="topping10" id="chk_frost"> Extra frosting
+                    </label>
+                </div>
+            </div>
+            <button class="add-tocart-button">
+                <span class="adding">Añadir al carrito</span>
+                <span class="product-total">$150</span>
+            </button>
+        </div>
+    </div>
+    <main>
+        <section class="cakes">
+            <div class="product-banner">
+                <img src="./assets/cake-banner.png" alt="banner de pasteles" class="product-banner-img">
+                <h2 class="section-title">Pasteles</h2>
+            </div>
+            <div class="product-selection">
+                <button class="product" id="chocoalte_cake" onclick="customCake()">
+                    <h3 class="product-title">Pastel personalizado</h3>
+                    <img src="./assets/pastel-choco.png" alt="pastel de chocolate" class="product-img">
+                </button>
+
+            </div>
+        </section>
+        <section class="cookies">
+            <div class="product-banner">
+                <img src="./assets/cookie-banner.png" alt="banner de galletas" class="product-banner-img">
+                <h2 class="section-title">Galletas</h2>
+            </div>
+            <div class="product-selection">
+                <button class="product" id="buy">
+                    <h3 class="product-title">Palmeritas</h3>
+                    <img src="./assets/galleta3.png" alt="pastel de chocolate" class="product-img">
+                    <p class="product-price">$50.00</p>
+                </button>
+
+            </div>
+        </section>
+        <section class="cupcakes">
+            <div class="product-banner">
+                <img src="./assets/cupcake-banner.png" alt="banner de galletas" class="product-banner-img">
+                <h2 class="section-title">Cupcakes</h2>
+            </div>
+            <div class="product-selection">
+                <button class="product" id=cookie" onclick="ligado()">
+                    <h3 class="product-title">Cupcake de chocolate</h3>
+                    <img src="./assets/cupcake.png" alt="pastel de chocolate" class="product-img">
+                    <p class="product-price">$50.00</p>
+                </button>
+
+            </div>
+        </section>
+        <div class="cart" style="display: none;">
+            <h3>Carrito de compras</h3>
+            <hr />
+            <table class="articles">
+                <thead>
+                    <tr>
+                        <th class="articles-articulo">Articulo</th>
+                        <th class="articles-cant">Cant.</th>
+                        <th class="articles-subt">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Galleta</td>
+                        <td>2</td>
+                        <td>50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>50</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="buy" class="customer-info">
+                <label for="customerName">Nombre:</label>
+                <input type="text" id="customerName">
+                <label for="customerPhone">Télefono:</label>
+                <input type="number" name="custNumber" id="customerPhone">
+                <label for="customerMail">Correo electronico:</label>
+                <input type="email" name="email" id="/customerMail" placeholder="usuario@ejemplo.com">
+                <button>Hacer pedido</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-dev">
+            <h3>Developer</h3>
+            <p>Ricardo Alcalá Castro</p>
+            <ul class="list-flex">
+                <li><a href="">Linkedin</a></li>
+                <li><a href="https://github.com/RicAlc">Github</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer-caketime">
+            <h1 class="logo-title">Cake Time</h1>
+            <ul class="list-flex">
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contáctanos</a></li>
+            </ul>
+        </div>
+        <div class="footer-atrib">
+            <h3>Atribuciones</h3>
+            <ul>
+                <li>Fotos por <a href="https://www.pexels.com/@dima-valkov-1186343/" target="blank_">Dima Valkov</a></li>
+                <li>Imágenes de <a href="https://pixabay.com/es/users/tatiana7744-22271110/" target="blank_">Tatiana7744</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script>
+        function ligado() {
+            alert("Ligado");
+        }
+    </script>
+</body>
+
+</html>
